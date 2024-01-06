@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="mycss.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Winter Break - Homework: Questions</title>
+  </head>
+  <body>
+    <!-- HTML & CSS Exercise: Vacation Rental Website -->
+    <header>
+      <nav class="navbar-expand-lg navbar-light">
+        <div class="container-fluid d-flex justify-content-between">
+          <h1 class="logo">
+            <a class="navbar-brand" href="#"
+              ><img src="img/logo.png" alt="logo" />Vacation Rental</a
+            >
+          </h1>
+          <div class="menuBtn">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#hero"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#rentals">Rentals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <section id="hero" class="banner">
+        <img src="img/banner.jpg" alt="Welcome Image" />
+        <h2 class="image-text">Join us?</h2>
+      </section>
+      <!-- 日期選擇器的input元素 -->
+      <div class="container">
+        <label for="datepicker">Select a Date:</label>
+        <input type="text" id="datepicker" name="datepicker" readonly />
+      </div>
+
+      <!-- 修改#rentals部分使用Bootstrap的row和col來呈現卡面 -->
+      <section id="rentals">
+        <div class="container mb-4">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="img/rental1.jpg"
+                  class="card-img-top"
+                  alt="Rental 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Rental Title</h5>
+                  <p class="card-text multiline-ellipsis">
+                    Rental Description Perfect for urban explorers. Rental
+                    Description Perfect for urban explorers.
+                  </p>
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="img/rental2.jpg"
+                  class="card-img-top"
+                  alt="Rental 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Rental 2</h5>
+                  <p class="card-text multiline-ellipsis">
+                    Charming cottage nestled in the hills. Ideal for a romantic
+                    retreat.
+                  </p>
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="img/rental3.jpg"
+                  class="card-img-top"
+                  alt="Rental 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Rental 3</h5>
+                  <p class="card-text multiline-ellipsis">
+                    Modern apartment in the heart of the city. Perfect for urban
+                    explorers.
+                  </p>
+                  <button>Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form class="contact-form">
+            <label for="name">Name:</label>
+            <input
+              class="form-control"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              class="form-control"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="module" src="all.js"></script>
+  </body>
+</html>

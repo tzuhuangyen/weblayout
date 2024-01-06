@@ -1,0 +1,114 @@
+header {
+  background-color: #e0f7ff;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.logo {
+  padding: 4px;
+  img {
+    width: 25px;
+    margin-right: 8px;
+  }
+}
+
+.navbar a {
+  margin-right: 5px;
+  padding: 4px;
+  color: #17a29d;
+}
+.navbar a:hover {
+  color: #121212;
+}
+
+.banner {
+  position: relative;
+  margin-bottom: 32px;
+}
+.banner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px; /* 根據需要調整固定的高度 */
+}
+.card {
+  max-height: 500px;
+}
+.card-body {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.rental img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #e0f7ff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7afaf6;
+}
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 600px;
+  margin: auto;
+}
+.contact-form {
+  text-align: center;
+}
+label,
+input,
+textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: start;
+}
+input {
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  /* Add responsive styles here */
+  header {
+    font-size: 1.5em;
+  }
+
+  #hero h2 {
+    font-size: 1.5em;
+  }
+
+  #rental {
+    margin: 10px;
+  }
+}
